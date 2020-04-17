@@ -1,5 +1,0 @@
-title: search-common-model
-type: object
-properties:
-  id:
-    type: string
