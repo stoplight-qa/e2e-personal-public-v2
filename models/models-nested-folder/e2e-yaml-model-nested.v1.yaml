@@ -1,0 +1,9 @@
+title: e2e-yaml-model-nested
+type: object
+properties:
+  id:
+    type: number
+  name:
+    type: string
+  isModel:
+    type: boolean

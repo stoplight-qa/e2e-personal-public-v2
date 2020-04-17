@@ -1,0 +1,36 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "e2eJson-api",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/e2e-json": {
+      "get": {
+        "summary": "e2e-get",
+        "tags": [],
+        "responses": {},
+        "operationId": ""
+      },
+      "parameters": []
+    }
+  },
+  "components": {
+    "schemas": {
+      "e2e-json-embedded-model": {
+        "title": "e2e-embedded-model",
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

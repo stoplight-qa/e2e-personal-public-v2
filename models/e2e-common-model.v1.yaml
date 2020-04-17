@@ -1,0 +1,9 @@
+title: e2e-common-model
+type: object
+properties:
+  id:
+    type: number
+  description:
+    type: string
+  isCommon:
+    type: boolean

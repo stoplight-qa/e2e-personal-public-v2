@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: e2eYaml-api
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /e2e-yaml:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: get-e2e-yaml
+components:
+  schemas:
+    e2e-yaml-embedded-model:
+      title: e2e-yaml-embedded-model
+      type: object
+      properties:
+        id:
+          type: number
+        age:
+          type: integer
