@@ -16,7 +16,55 @@ servers:
     description: greatServerName
   - description: anotherServerName
     url: 'http://localhost:4600'
-paths: {}
+paths:
+  /users:
+    get:
+      summary: get me some users
+      tags: []
+      responses:
+        '200':
+          description: OK
+          headers:
+            header-0:
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  responseString:
+                    type: string
+      operationId: get-users
+      description: getting users is awesome
+      security:
+        - API Key - 3: []
+      parameters:
+        - schema:
+            type: string
+          in: header
+          name: get-users-header
+          description: ''
+        - schema:
+            type: string
+          in: query
+          name: get-users-qp
+          required: true
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                stachursky:
+                  type: string
+                infinite:
+                  type: number
+    post:
+      summary: add moar userz
+      tags: []
+      responses: {}
+      operationId: post-users
 components:
   schemas: {}
   securitySchemes:
