@@ -1,1 +1,14 @@
-
+{
+  "name": "E2e personal public v2",
+  "description": "",
+  "spectralExtends": [],
+  "formats": [
+    "oas2",
+    "oas3",
+    "oas3.0",
+    "oas3.1"
+  ],
+  "aliases": {},
+  "rules": {},
+  "extendedDefault": false
+}
